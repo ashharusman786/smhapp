@@ -49,4 +49,8 @@
     <string name="save">Save</string>
     <string name="edit">Edit</string>
     <string name="delete">Delete</string>
+    
+    <!-- Splash Screen -->
+    <string name="splash_tagline">Your Health, Our Priority</string>
+    <string name="app_version">Version 1.0</string>
 </resources>
