@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_menu_home"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="@string/nav_about_us" />
+        <item
+            android:id="@+id/nav_departments"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="@string/nav_departments" />
+        <item
+            android:id="@+id/nav_doctors"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="@string/nav_doctors" />
+        <item
+            android:id="@+id/nav_services"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="@string/nav_services" />
+        <item
+            android:id="@+id/nav_appointment"
+            android:icon="@android:drawable/ic_menu_today"
+            android:title="@string/nav_appointment" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@android:drawable/ic_menu_call"
+            android:title="@string/nav_contact" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_rate_us"
+                android:icon="@android:drawable/btn_star_big_on"
+                android:title="@string/nav_rate_us" />
+            <item
+                android:id="@+id/nav_share_app"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="@string/nav_share_app" />
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="@string/nav_privacy_policy" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="@string/nav_logout" />
+        </menu>
+    </item>
+
+</menu>

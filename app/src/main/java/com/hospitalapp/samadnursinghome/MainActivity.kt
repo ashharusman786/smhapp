@@ -14,6 +14,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter // Or FragmentStatePagerAdapter
 import androidx.viewpager.widget.ViewPager // Ensure this is the correct ViewPager import
 import com.google.android.material.navigation.NavigationView
+import com.hospitalapp.samadnursinghome.activities.LoginActivity
 import com.hospitalapp.samadnursinghome.databinding.ActivityMainBinding
 import com.hospitalapp.samadnursinghome.fragments.AboutUsFragment // Import your fragments
 import com.hospitalapp.samadnursinghome.fragments.AppointmentFragment
@@ -22,15 +23,26 @@ import com.hospitalapp.samadnursinghome.fragments.DepartmentFragment
 import com.hospitalapp.samadnursinghome.fragments.DoctorsFragment
 import com.hospitalapp.samadnursinghome.fragments.HomeFragment
 import com.hospitalapp.samadnursinghome.fragments.OurServicesFragment
+import com.hospitalapp.samadnursinghome.utils.SessionManager
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var toggle: ActionBarDrawerToggle
     private lateinit var pagerAdapter: ViewPagerAdapter
+    private lateinit var sessionManager: SessionManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+        sessionManager = SessionManager(this)
+        
+        // Check if user is logged in
+        if (!sessionManager.isLoggedIn() || sessionManager.isSessionExpired()) {
+            navigateToLogin()
+            return
+        }
+        
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -119,6 +131,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("YOUR_PRIVACY_POLICY_URL_HERE"))
                 startActivity(browserIntent)
             }
+            R.id.nav_logout -> {
+                performLogout()
+            }
             else -> Toast.makeText(this, "Coming Soon!", Toast.LENGTH_SHORT).show() // Default for unhandled items
         }
 
@@ -128,6 +143,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         return true
+    }
+    
+    private fun performLogout() {
+        sessionManager.clearSession()
+        navigateToLogin()
+    }
+    
+    private fun navigateToLogin() {
+        val intent = Intent(this, LoginActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        startActivity(intent)
+        finish()
     }
 
     override fun onBackPressed() {
