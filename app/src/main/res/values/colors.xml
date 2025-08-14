@@ -1,29 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- 2025 Glassmorphism Hospital Theme -->
-    <color name="primary">#4AC7D0</color>
-    <color name="secondary">#00A3C4</color>
-    <color name="accent">#FFD66B</color>
-    <color name="background_gradient_top">#D9F3F2</color>
-    <color name="background_gradient_bottom">#E3F8F8</color>
-    <color name="error">#FF6B6B</color>
-    <color name="success">#4CAF50</color>
+    <!-- Dark Theme Colors Based on Screenshots -->
+    <color name="primary_dark">#1A1A1A</color>
+    <color name="secondary_dark">#2A2A2A</color>
+    <color name="card_dark">#333333</color>
+    <color name="surface_dark">#404040</color>
     
-    <color name="white">#FFFFFF</color>
+    <!-- Accent Colors -->
+    <color name="accent_blue">#4A90E2</color>
+    <color name="accent_green">#4CAF50</color>
+    <color name="accent_purple">#9C27B0</color>
+    <color name="accent_pink">#E91E63</color>
+    <color name="accent_orange">#FF9800</color>
+    <color name="accent_red">#F44336</color>
+    
+    <!-- Text Colors -->
     <color name="text_primary">#FFFFFF</color>
-    <color name="text_secondary">#BFFFFFFF</color>
-    <color name="text_dark">#1A1A1A</color>
+    <color name="text_secondary">#B0B0B0</color>
+    <color name="text_tertiary">#808080</color>
     
-    <!-- Glass Panel Colors -->
-    <color name="glass_background">#26FFFFFF</color>
-    <color name="glass_border">#4DFFFFFF</color>
-    <color name="glass_button">#40FFFFFF</color>
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FF9800</color>
+    <color name="error">#F44336</color>
+    <color name="info">#2196F3</color>
+    
+    <!-- Background Colors -->
+    <color name="background_primary">#121212</color>
+    <color name="background_secondary">#1E1E1E</color>
+    
+    <!-- Button Colors -->
+    <color name="button_primary">#4A90E2</color>
+    <color name="button_secondary">#333333</color>
     
     <!-- Legacy colors for compatibility -->
-    <color name="primaryBlue">#4AC7D0</color>
-    <color name="lightBlue">#D9F3F2</color>
-    <color name="textDark">#1A1A1A</color>
-    <color name="textLight">#BFFFFFFF</color>
-    <color name="cardBg">#26FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
 </resources>

@@ -1,56 +1,104 @@
 <resources>
     <string name="app_name">Samad Nursing Home</string>
     
-    <!-- Navigation Drawer -->
-    <string name="OpenDrawer">Open Navigation Drawer</string>
-    <string name="CloseDrawer">Close Navigation Drawer</string>
+    <!-- Navigation -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
     
-    <!-- Login Screen -->
-    <string name="welcome_back">Welcome Back</string>
-    <string name="login_subtitle">Sign in to access your healthcare dashboard</string>
-    <string name="email_hint">Email Address</string>
-    <string name="password_hint">Password</string>
-    <string name="login_button">Sign In</string>
-    <string name="forgot_password">Forgot Password?</string>
-    <string name="create_account">Create New Account</string>
+    <!-- Home Screen -->
+    <string name="experience_in_care">Experience in Care</string>
+    <string name="patients_count">5000+</string>
+    <string name="patients_label">Happy Patients</string>
+    <string name="emergency_count">24/7</string>
+    <string name="emergency_label">Emergency Care</string>
+    <string name="experts_count">2+</string>
+    <string name="experts_label">Expert Doctors</string>
+    <string name="experience_count">5+</string>
+    <string name="experience_label">Years Experience</string>
     
-    <!-- Validation Messages -->
-    <string name="error_empty_email">Please enter your email address</string>
-    <string name="error_invalid_email">Please enter a valid email address</string>
-    <string name="error_empty_password">Please enter your password</string>
-    <string name="error_short_password">Password must be at least 6 characters</string>
-    <string name="error_login_failed">Login failed. Please check your credentials.</string>
+    <string name="ready_for_healthcare">Ready to Experience Quality Healthcare?</string>
+    <string name="healthcare_subtitle">Join thousands of satisfied patients who trust us with their health</string>
+    <string name="get_started">Get Started</string>
+    <string name="need_emergency">Need Emergency Care?</string>
+    <string name="emergency_number">+91 7860120688</string>
     
-    <!-- Dashboard -->
-    <string name="dashboard_welcome">Welcome to Samad Nursing Home</string>
+    <!-- Quick Actions -->
     <string name="quick_actions">Quick Actions</string>
     <string name="book_appointment">Book Appointment</string>
-    <string name="view_records">View Records</string>
-    <string name="emergency_contact">Emergency Contact</string>
-    <string name="doctor_schedule">Doctor Schedule</string>
+    <string name="video_consultation">Video Consultation</string>
+    <string name="online_consultation">Online Consultation</string>
     
-    <!-- Navigation Menu -->
+    <!-- Services -->
+    <string name="healthcare_services">24/7 Healthcare Services</string>
+    <string name="domestic_care">Domestic Care</string>
+    <string name="call_now">Call Now</string>
+    <string name="buy_treatment">Buy Treatment Dose at Half a</string>
+    <string name="price_or_even_less">price or even less</string>
+    
+    <!-- Doctors -->
+    <string name="our_doctors">Our Doctors</string>
+    <string name="view_all">View All</string>
+    <string name="available">Available</string>
+    <string name="message">Message</string>
+    <string name="call">Call</string>
+    
+    <!-- Hospital Timings -->
+    <string name="hospital_timings">Hospital Timings</string>
+    <string name="open_now">Open Now</string>
+    <string name="monday_saturday">Monday - Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="timing_weekday">8:00 AM - 10:00 PM</string>
+    <string name="timing_sunday">8:00 AM - 2:00 PM</string>
+    
+    <!-- Visit Us -->
+    <string name="visit_us">Visit Us</string>
+    <string name="interactive_map">Interactive Map</string>
+    <string name="hospital_address">Samad Nursing Home\nRangpuri Road, Mahipalpur,\nNew Delhi, District Azamgarh,\nUttar Pradesh, PIN: 276001</string>
+    <string name="directions">Directions</string>
+    <string name="whatsapp">WhatsApp</string>
+    
+    <!-- Appointment Booking -->
+    <string name="book_appointment_title">Book Appointment</string>
+    <string name="schedule_consultation">Schedule your consultation</string>
+    <string name="consultation_type">Consultation Type</string>
+    <string name="in_person">In-Person</string>
+    <string name="in_clinic_visit">In-Clinic Visit</string>
+    <string name="video_call">Video Call</string>
+    <string name="convenient_home">Convenient from home</string>
+    <string name="select_doctor">Select Doctor</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_time">Select Time</string>
+    
+    <!-- Doctor Names -->
+    <string name="dr_badshah_malik">Dr. Badshahshah Malik</string>
+    <string name="heart_specialist">Heart Specialist</string>
+    <string name="dr_zeeshan_ahmed">Dr. Zeeshan Ahmed</string>
+    <string name="general_physician_child">General Physician and Child Specialist</string>
+    
+    <!-- Days -->
+    <string name="aug_15">Aug\n15</string>
+    <string name="aug_16">Aug\n16</string>
+    <string name="aug_17">Aug\n17</string>
+    <string name="aug_18">Aug\n18</string>
+    
+    <!-- Times -->
+    <string name="time_9_00">9:00</string>
+    <string name="time_10_00">10:00</string>
+    <string name="time_11_00">11:00</string>
+    <string name="time_2_00">2:00</string>
+    
+    <!-- Bottom Navigation -->
     <string name="nav_home">Home</string>
-    <string name="nav_about_us">About Us</string>
-    <string name="nav_departments">Departments</string>
-    <string name="nav_doctors">Doctors</string>
-    <string name="nav_services">Our Services</string>
-    <string name="nav_appointment">Appointment</string>
-    <string name="nav_contact">Contact Us</string>
-    <string name="nav_rate_us">Rate Us</string>
-    <string name="nav_share_app">Share App</string>
-    <string name="nav_privacy_policy">Privacy Policy</string>
-    <string name="nav_logout">Logout</string>
+    <string name="nav_appointments">Appointments</string>
+    <string name="nav_records">Records</string>
+    <string name="nav_profile">Profile</string>
     
-    <!-- General -->
+    <!-- Common -->
     <string name="loading">Loading...</string>
     <string name="retry">Retry</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
     <string name="edit">Edit</string>
     <string name="delete">Delete</string>
-    
-    <!-- Splash Screen -->
-    <string name="splash_tagline">Your Health, Our Priority</string>
-    <string name="app_version">Version 1.0</string>
+    <string name="confirm">Confirm</string>
 </resources>

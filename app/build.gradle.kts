@@ -5,18 +5,16 @@ plugins {
 
 android {
     namespace = "com.hospitalapp.samadnursinghome"
-    compileSdk = 36
-
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.hospitalapp.samadnursinghome"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
@@ -28,23 +26,27 @@ android {
             )
         }
     }
+    
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    
     kotlinOptions {
         jvmTarget = "11"
+    }
+    
+    buildFeatures {
+        viewBinding = true
     }
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.mediation.test.suite)
     
     // Navigation Components
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
@@ -54,27 +56,25 @@ dependencies {
     implementation("androidx.viewpager2:viewpager2:1.0.0")
     implementation("androidx.fragment:fragment-ktx:1.6.2")
     
+    // RecyclerView
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    
+    // CardView
+    implementation("androidx.cardview:cardview:1.0.0")
+    
     // Lottie Animations
     implementation("com.airbnb.android:lottie:6.2.0")
-    
-    // Blur Effect Library
-    implementation("com.github.Dimezis:BlurView:version-2.0.3")
     
     // SharedPreferences (Encrypted)
     implementation("androidx.security:security-crypto:1.1.0-alpha06")
     
-    // Date Picker
-    implementation("com.google.android.material:material:1.11.0")
+    // Glide for image loading
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    
+    // Circular ImageView
+    implementation("de.hdodenhof:circleimageview:3.1.0")
     
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("androidx.cardview:cardview:1.0.0")
-    implementation("com.google.android.flexbox:flexbox:3.0.0")
-    implementation("androidx.core:core-ktx:1.10.1")
-
-
 }

@@ -6,18 +6,20 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.AnimationUtils
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.hospitalapp.samadnursinghome.R
+import com.hospitalapp.samadnursinghome.activities.AppointmentBookingActivity
+import com.hospitalapp.samadnursinghome.adapters.DoctorsAdapter
 import com.hospitalapp.samadnursinghome.databinding.FragmentHomeBinding
-import com.hospitalapp.samadnursinghome.utils.SessionManager
+import com.hospitalapp.samadnursinghome.models.Doctor
 
 class HomeFragment : Fragment() {
-    
+
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-    private lateinit var sessionManager: SessionManager
-    
+    private lateinit var doctorsAdapter: DoctorsAdapter
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -26,53 +28,74 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
-    
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         
-        sessionManager = SessionManager(requireContext())
-        
-        setupUI()
         setupClickListeners()
-        startAnimations()
+        setupDoctorsList()
     }
-    
-    private fun setupUI() {
-        // Set welcome message with user name
-        val userName = sessionManager.getUserName() ?: "User"
-        binding.tvWelcomeUser.text = "Welcome back, $userName!"
-    }
-    
+
     private fun setupClickListeners() {
-        binding.cardBookAppointment.setOnClickListener {
-            // TODO: Navigate to appointment booking
-            // For now, show a placeholder
+        binding.btnGetStarted.setOnClickListener {
+            startActivity(Intent(requireContext(), AppointmentBookingActivity::class.java))
         }
         
-        binding.cardViewRecords.setOnClickListener {
-            // TODO: Navigate to patient records
-        }
-        
-        binding.cardEmergency.setOnClickListener {
-            // Emergency call functionality
+        binding.btnEmergencyCall.setOnClickListener {
             val intent = Intent(Intent.ACTION_DIAL)
-            intent.data = Uri.parse("tel:+911234567890") // Replace with actual emergency number
+            intent.data = Uri.parse("tel:+917860120688")
             startActivity(intent)
         }
         
-        binding.cardDoctorSchedule.setOnClickListener {
-            // TODO: Navigate to doctor schedule
+        binding.cardBookAppointment.setOnClickListener {
+            startActivity(Intent(requireContext(), AppointmentBookingActivity::class.java))
+        }
+        
+        binding.cardVideoConsultation.setOnClickListener {
+            // TODO: Implement video consultation
+        }
+        
+        binding.btnDirections.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse("geo:0,0?q=Samad Nursing Home, Mahipalpur, New Delhi")
+            startActivity(intent)
+        }
+        
+        binding.btnWhatsapp.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse("https://wa.me/917860120688")
+            startActivity(intent)
         }
     }
-    
-    private fun startAnimations() {
-        val slideInLeft = AnimationUtils.loadAnimation(context, android.R.anim.slide_in_left)
-        val fadeIn = AnimationUtils.loadAnimation(context, android.R.anim.fade_in)
+
+    private fun setupDoctorsList() {
+        val doctors = listOf(
+            Doctor(
+                id = "1",
+                name = "Dr. Badshahshah Malik",
+                specialization = "Heart Specialist",
+                isAvailable = true,
+                imageUrl = ""
+            ),
+            Doctor(
+                id = "2",
+                name = "Dr. Zeeshan Ahmed",
+                specialization = "General Physician and Child Specialist",
+                isAvailable = true,
+                imageUrl = ""
+            )
+        )
         
-        binding.welcomeCard.startAnimation(fadeIn)
-        binding.quickActionsCard.startAnimation(slideInLeft)
+        doctorsAdapter = DoctorsAdapter(doctors) { doctor ->
+            // Handle doctor click
+        }
+        
+        binding.recyclerViewDoctors.apply {
+            layoutManager = LinearLayoutManager(requireContext())
+            adapter = doctorsAdapter
+        }
     }
-    
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
