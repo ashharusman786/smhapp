@@ -6,15 +6,22 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.hospitalapp.samadnursinghome.databinding.ActivityMainBinding
 import com.hospitalapp.samadnursinghome.fragments.AppointmentsFragment
+import com.hospitalapp.samadnursinghome.fragments.ChatFragment
 import com.hospitalapp.samadnursinghome.fragments.HomeFragment
 import com.hospitalapp.samadnursinghome.fragments.ProfileFragment
 import com.hospitalapp.samadnursinghome.fragments.RecordsFragment
+import com.hospitalapp.samadnursinghome.utils.ThemeManager
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var themeManager: ThemeManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Apply theme before super.onCreate()
+        themeManager = ThemeManager(this)
+        themeManager.applyTheme()
+        
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -24,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         // Load home fragment by default
         if (savedInstanceState == null) {
             loadFragment(HomeFragment())
+            binding.bottomNavigation.selectedItemId = R.id.nav_home
         }
     }
 
@@ -42,6 +50,10 @@ class MainActivity : AppCompatActivity() {
                     loadFragment(RecordsFragment())
                     true
                 }
+                R.id.nav_chat -> {
+                    loadFragment(ChatFragment())
+                    true
+                }
                 R.id.nav_profile -> {
                     loadFragment(ProfileFragment())
                     true
@@ -56,4 +68,9 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.fragment_container, fragment)
             .commit()
     }
+    
+    /**
+     * Get current theme manager instance
+     */
+    fun getThemeManager(): ThemeManager = themeManager
 }

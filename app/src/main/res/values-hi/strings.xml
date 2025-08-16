@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">समद नर्सिंग होम</string>
+    
+    <!-- Navigation -->
+    <string name="navigation_drawer_open">नेवीगेशन ड्रावर खोलें</string>
+    <string name="navigation_drawer_close">नेवीगेशन ड्रावर बंद करें</string>
+    
+    <!-- Home Screen -->
+    <string name="experience_in_care">देखभाल में अनुभव</string>
+    <string name="patients_count">5000+</string>
+    <string name="patients_label">खुश मरीज़</string>
+    <string name="emergency_count">24/7</string>
+    <string name="emergency_label">आपातकालीन देखभाल</string>
+    <string name="experts_count">2+</string>
+    <string name="experts_label">विशेषज्ञ डॉक्टर</string>
+    <string name="experience_count">5+</string>
+    <string name="experience_label">साल का अनुभव</string>
+    
+    <string name="ready_for_healthcare">गुणवत्तापूर्ण स्वास्थ्य सेवा का अनुभव करने के लिए तैयार हैं?</string>
+    <string name="healthcare_subtitle">हजारों संतुष्ट मरीज़ों में शामिल हों जो अपने स्वास्थ्य के लिए हम पर भरोसा करते हैं</string>
+    <string name="get_started">शुरू करें</string>
+    <string name="need_emergency">आपातकालीन देखभाल चाहिए?</string>
+    <string name="emergency_number">+91 7860120688</string>
+    <string name="healthcare_services">24/7 स्वास्थ्य सेवाएं</string>
+    <string name="emergency_care_24_7">24/7 आपातकालीन देखभाल</string>
+    <string name="immediate_medical_assistance">तत्काल चिकित्सा सहायता उपलब्ध</string>
+    <string name="schedule_with_doctors">डॉक्टरों के साथ अपॉइंटमेंट</string>
+    
+    <!-- Quick Actions -->
+    <string name="quick_actions">त्वरित कार्य</string>
+    <string name="book_appointment">अपॉइंटमेंट बुक करें</string>
+    <string name="video_consultation">वीडियो परामर्श</string>
+    <string name="online_consultation">ऑनलाइन परामर्श</string>
+    
+    <!-- Services -->
+    <string name="our_services">हमारी सेवाएं</string>
+    <string name="domestic_care">घरेलू देखभाल</string>
+    <string name="call_now">अभी कॉल करें</string>
+    <string name="buy_treatment">आधी कीमत पर इलाज खरीदें</string>
+    <string name="price_or_even_less">या इससे भी कम</string>
+    
+    <!-- Service Names and Descriptions -->
+    <string name="emergency_care">आपातकालीन देखभाल</string>
+    <string name="emergency_care_desc">24/7 आपातकालीन चिकित्सा सेवाएं</string>
+    <string name="cardiology">हृदय रोग विज्ञान</string>
+    <string name="cardiology_desc">हृदय की देखभाल और उपचार</string>
+    <string name="pediatrics">बाल चिकित्सा</string>
+    <string name="pediatrics_desc">बच्चों की स्वास्थ्य सेवाएं</string>
+    <string name="laboratory">प्रयोगशाला</string>
+    <string name="laboratory_desc">निदान परीक्षण और रिपोर्ट</string>
+    <string name="pharmacy">फार्मेसी</string>
+    <string name="pharmacy_desc">दवाएं और स्वास्थ्य उत्पाद</string>
+    
+    <!-- Doctors -->
+    <string name="our_doctors">हमारे डॉक्टर</string>
+    <string name="view_all">सभी देखें</string>
+    <string name="available">उपलब्ध</string>
+    <string name="message">संदेश</string>
+    <string name="call">कॉल करें</string>
+    
+    <!-- Hospital Timings -->
+    <string name="hospital_timings">अस्पताल का समय</string>
+    <string name="open_now">अभी खुला है</string>
+    <string name="monday_saturday">सोमवार - शनिवार</string>
+    <string name="sunday">रविवार</string>
+    <string name="timing_weekday">सुबह 8:00 - रात 10:00</string>
+    <string name="timing_sunday">सुबह 8:00 - दोपहर 2:00</string>
+    
+    <!-- Visit Us -->
+    <string name="visit_us">हमसे मिलें</string>
+    <string name="interactive_map">इंटरैक्टिव मैप</string>
+    <string name="hospital_address">समद नर्सिंग होम\nरंगपुरी रोड, महिपालपुर,\nनई दिल्ली, जिला आजमगढ़,\nउत्तर प्रदेश, पिन: 276001</string>
+    <string name="directions">दिशा-निर्देश</string>
+    <string name="whatsapp">व्हाट्सऐप</string>
+    
+    <!-- Appointment Booking -->
+    <string name="book_appointment_title">अपॉइंटमेंट बुक करें</string>
+    <string name="schedule_consultation">अपना परामर्श निर्धारित करें</string>
+    <string name="consultation_type">परामर्श का प्रकार</string>
+    <string name="in_person">व्यक्तिगत रूप से</string>
+    <string name="in_clinic_visit">क्लिनिक में जाना</string>
+    <string name="video_call">वीडियो कॉल</string>
+    <string name="convenient_home">घर से सुविधाजनक</string>
+    <string name="select_doctor">डॉक्टर चुनें</string>
+    <string name="select_date">तारीख चुनें</string>
+    <string name="select_time">समय चुनें</string>
+    
+    <!-- Doctor Names -->
+    <string name="dr_badshah_malik">डॉ. बादशाहशाह मलिक</string>
+    <string name="heart_specialist">हृदय विशेषज्ञ</string>
+    <string name="dr_zeeshan_ahmed">डॉ. जीशान अहमद</string>
+    <string name="general_physician_child">सामान्य चिकित्सक और बाल विशेषज्ञ</string>
+    
+    <!-- Bottom Navigation -->
+    <string name="nav_home">होम</string>
+    <string name="nav_appointments">अपॉइंटमेंट</string>
+    <string name="nav_records">रिकॉर्ड</string>
+    <string name="nav_profile">प्रोफाइल</string>
+    <string name="nav_chat">AI चैट</string>
+    
+    <!-- Permissions -->
+    <string name="permission_required">अनुमति आवश्यक</string>
+    <string name="call_permission_explanation">इस ऐप को आपातकालीन कॉल करने के लिए फोन की अनुमति चाहिए। आप डायलर का भी उपयोग कर सकते हैं।</string>
+    <string name="grant_permission">अनुमति दें</string>
+    <string name="call_permission_denied">कॉल की अनुमति नहीं दी गई। डायलर का उपयोग कर रहे हैं।</string>
+    <string name="emergency_call">आपातकालीन कॉल</string>
+    
+    <!-- Error Messages -->
+    <string name="no_maps_app">कोई मैप एप्लिकेशन नहीं मिला</string>
+    <string name="whatsapp_not_installed">व्हाट्सऐप इंस्टॉल नहीं है</string>
+    <string name="feature_coming_soon">फीचर जल्द आ रहा है!</string>
+    
+    <!-- Login -->
+    <string name="welcome_back">वापस स्वागत है</string>
+    <string name="login_subtitle">अपनी स्वास्थ्य सेवाओं तक पहुंचने के लिए साइन इन करें</string>
+    <string name="email_hint">ईमेल</string>
+    <string name="password_hint">पासवर्ड</string>
+    <string name="login_button">लॉगिन</string>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="create_account">खाता नहीं है? साइन अप करें</string>
+    
+    <!-- Chat -->
+    <string name="ai_assistant">AI स्वास्थ्य सहायक</string>
+    <string name="type_message">अपना संदेश टाइप करें...</string>
+    <string name="send">भेजें</string>
+    <string name="clear_chat">चैट साफ़ करें</string>
+    <string name="chat_cleared">चैट साफ़ कर दी गई</string>
+    
+    <!-- Common -->
+    <string name="loading">लोड हो रहा है...</string>
+    <string name="retry">पुनः प्रयास</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="save">सेव करें</string>
+    <string name="edit">संपादित करें</string>
+    <string name="delete">हटाएं</string>
+    <string name="confirm">पुष्टि करें</string>
+    <string name="ok">ठीक है</string>
+    <string name="yes">हां</string>
+    <string name="no">नहीं</string>
+    
+    <!-- Theme -->
+    <string name="light_theme">लाइट थीम</string>
+    <string name="dark_theme">डार्क थीम</string>
+    <string name="system_theme">सिस्टम डिफ़ॉल्ट</string>
+    
+    <!-- Language -->
+    <string name="language">भाषा</string>
+    <string name="english">English</string>
+    <string name="hindi">हिंदी</string>
+</resources>
